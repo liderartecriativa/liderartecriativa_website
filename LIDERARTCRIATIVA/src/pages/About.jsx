@@ -3,7 +3,7 @@ export const About = () => {
 
     return (
         <body>
-            <p>EU SOU O ABOUT</p>
+            <p>EU SOU O</p>
         </body>
     );
 }

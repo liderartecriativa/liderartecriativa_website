@@ -1,105 +1,89 @@
-import React, { useState } from 'react';
+
 import './App.scss'
-//REACTROUTER
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {Home} from './pages/Home'
-import {About} from './pages/About'
-import {Jobs} from './pages/Jobs'
-import {Products} from './pages/Products'
-import {More} from './pages/More'
-import {Pricing} from './pages/Pricing'
-import {Blog} from './pages/Blog'
-
+import React from 'react';
+import { Rotas } from './Routes';
+import { Container } from 'react-bootstrap';
+//MUI
+import { Box } from '@mui/material';
+import HistoryToggleOffRoundedIcon from '@mui/icons-material/HistoryToggleOffRounded';
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
+import HomeIcon from '@mui/icons-material/Home';
+import { BottomNavigationAction, BottomNavigation } from '@mui/material';
 //antd
-import { Layout,Menu } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 
-//MENUITEMS
-const items = [
-  {
-    label: 'Home',
-    key: 'Home',
-    to:'/Home',
-    icon: <MailOutlined />,
-  },
-  {
-    label: 'About',
-    key: 'About',
-    to:'/About',
-    icon: <MailOutlined />,
-  },
-  {
-    label: 'Products',
-    key: 'Products',
-    icon: <MailOutlined />,
-  },
-  {
-    label: 'Pricing',
-    key: 'Pricing',
-    icon: <MailOutlined />,
-  },
-  {
-    label: 'Blog',
-    key: 'Blog',
-    icon: <MailOutlined />,
-  },
-  {
-    label: 'Jobs',
-    icon: <AppstoreOutlined />,
-  },
-  {
-    label: 'More',
-    key: 'SubMenu',
-    icon: <SettingOutlined />,
-    children: [
-      {
-        type: 'group',
-        children: [
-          {
-            label: 'Option 1',
-            key: 'setting:1',
-          },
-          {
-            label: 'Option 2',
-            key: 'setting:2',
-          },
-        ],
-      },
-    ],
-  },
-];
+import { Col, Row } from 'react-bootstrap';
 
 function App() {
 
-  const { Header, Content, Footer } = Layout;
-  const [current, setCurrent] = useState('Home');
-  const onClick = (e) => {
-    console.log('click ', e);
-    setCurrent(e.key);
- 
+  //MENU
+  const [value, setValue] = React.useState('Home');
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
+  };
+
+
   return (
-    <Layout id="Layout">
-      <Header id="Header">
-      <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
-      </Header>
-      <Content id="Content">
-      <BrowserRouter>
-    <Routes>
-           <Route element = { <Home/> }  path="/"  exact />
-           <Route element = {<About/>} path="/About" />
-           <Route element = { <Products/> }  path="/Pedidos"  />
-           <Route element = { <Pricing/> }  path="/Busca"  />
-           <Route element = { <Blog/> }  path="/Ajuda"   />
-           <Route element = {<Jobs/>} path="/Status" />
-           <Route element = {<More/>} path="/More" />
-    </Routes>
-    </BrowserRouter>
-      </Content>
-      <Footer id="Footer">
-       
-      </Footer>
-    </Layout>
+    <>
+    <body>
+      <header>
+        <Container>
+        <Row>
+          <Col>
+            <Box>
+              <BottomNavigation value={value} onChange={handleChange} sx={{ position: 'top', bottom: 0, left: 0, right: 0 }} elevation={0}>
+                <BottomNavigationAction
+                  id="colorBt"
+                  label="Home"
+                  href="/Home"
+                  icon={<HomeIcon id="icon" />} />
+                <BottomNavigationAction
+                  id="colorBt"
+                  label="About"
+                  href="/About"
+                  icon={<ShoppingCartRoundedIcon id="icon" />} />
+                <BottomNavigationAction
+                  id="colorBt"
+                  label="Products"
+                  href="/Products"
+                  icon={<SearchIcon id="icon" />} />
+                <BottomNavigationAction
+                  id="colorBt"
+                  label="Pricing"
+                  href="/Pricing"
+                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
+                <BottomNavigationAction
+                  id="colorBt"
+                  label="Blog"
+                  href="/Blog"
+                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
+                <BottomNavigationAction
+                  id="colorBt"
+                  label="Jobs"
+                  href="/Jobs"
+                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
+                <BottomNavigationAction
+                  id="colorBt"
+                  label="More"
+                  href="/More"
+                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
+              </BottomNavigation>
+            </Box>
+          </Col>
+        </Row>
+        </Container>
+      </header>
+      <content>
+        <Rotas />
+      </content>
+      <footer>
+
+      </footer>
+    </body>
+    </>
+
   )
 }
-}
+
 export default App
