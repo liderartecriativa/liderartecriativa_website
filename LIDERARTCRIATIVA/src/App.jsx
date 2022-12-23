@@ -6,6 +6,8 @@ import { Menu } from 'antd';
 import { Col, Row } from 'antd';
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
+import {DownOutlined} from '@ant-design/icons';
+
 const items = [
   {
     label: (
@@ -14,6 +16,7 @@ const items = [
       </a>
     ),
     key: 'Home',
+   
   },
 
   {
@@ -49,6 +52,7 @@ const items = [
     key: 'Jobs',
   },
   {
+    icon:<DownOutlined />,
     label: 'Mais',
     key: 'SubMenu',
     children: [
@@ -71,8 +75,11 @@ const items = [
 
 
 function App() {
+  //LOADING DISPLAY NONE
+  document.getElementById("loading").style.display = "none";
 
-  const [current, setCurrent] = useState('mail');
+
+  const [current, setCurrent] = useState('home');
   const onClick = (e) => {
     console.log('click ', e);
     setCurrent(e.key);
@@ -84,12 +91,12 @@ function App() {
         <Row gutter={[8, 8]} justify={'center'} align={'middle'} > 
           <Col span={15}>
            
-          <Avatar size="large" icon={<UserOutlined />} src="#"/>
+          <Avatar size="large" icon={<UserOutlined />} src="src/assets/logo.png"/>
 
       
           </Col>
           <Col span={9}>
-            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+            <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}  />
           </Col>
 
         </Row>
