@@ -3,17 +3,19 @@ import './App.scss'
 import React, { useState } from 'react'
 import { Rotas } from './Routes'
 import { Menu } from 'antd';
-
-
+import { Col, Row } from 'antd';
+import { Avatar } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 const items = [
   {
     label: (
       <a href="/" rel="noopener noreferrer">
-        Home
+       Home
       </a>
     ),
-    key: 'home',
+    key: 'Home',
   },
+
   {
     label: (
       <a href="/About" rel="noopener noreferrer">
@@ -55,13 +57,13 @@ const items = [
           <a href="/Bookingpage1" rel="noopener noreferrer">
             Reserva
           </a>),
-        key: 'bookingpage1',
+
       },
       {
         label: (<a href="/Bookingpage2" rel="noopener noreferrer">
           Reserva2
         </a>),
-        key: 'bookingpage1',
+
       },
     ],
   },
@@ -79,21 +81,28 @@ function App() {
   return (
     <>
       <header>
-        <main>
-          <div>
+        <Row gutter={[8, 8]} justify={'center'} align={'middle'} > 
+          <Col span={15}>
+           
+          <Avatar size="large" icon={<UserOutlined />} src="#"/>
 
-          </div>
-        </main>
+      
+          </Col>
+          <Col span={9}>
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+          </Col>
+
+        </Row>
+
       </header>
       <body>
-        <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         <Rotas />
       </body>
       <footer>
 
       </footer>
-    </>
 
+    </>
   )
 
 }
