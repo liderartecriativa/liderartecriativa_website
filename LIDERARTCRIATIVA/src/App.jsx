@@ -1,89 +1,100 @@
 
 import './App.scss'
-import React from 'react';
-import { Rotas } from './Routes';
-import { Container } from 'react-bootstrap';
-//MUI
-import { Box } from '@mui/material';
-import HistoryToggleOffRoundedIcon from '@mui/icons-material/HistoryToggleOffRounded';
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
-import HomeIcon from '@mui/icons-material/Home';
-import { BottomNavigationAction, BottomNavigation } from '@mui/material';
-//antd
+import React,  { useState }  from 'react'
+import {Rotas} from './Routes'
 
-import { Col, Row } from 'react-bootstrap';
+import { Menu } from 'antd';
+
+
+const items = [
+  {
+    label: (
+      <a href="/" rel="noopener noreferrer">
+        Home
+      </a>
+    ),
+    key: 'home',
+  },
+  {
+    label: (
+      <a href="/About" rel="noopener noreferrer">
+        Sobre
+      </a>
+    ),
+    key: 'About',
+  },
+  {
+    label: (
+      <a href="/Products" rel="noopener noreferrer">
+        Produtos
+      </a>
+    ),
+    key: 'Products',
+  },
+  {
+    label: (
+      <a href="/Blog" rel="noopener noreferrer">
+        Blog
+      </a>
+    ),
+    key: 'Blog',
+  },
+  {
+    label: (
+      <a href="/Jobs" rel="noopener noreferrer">
+        Jobs
+      </a>
+    ),
+    key: 'Jobs',
+  },
+  {
+    label: 'Mais',
+    key: 'SubMenu',
+      children: [
+          {
+            label:(
+              <a href="/bookingpage_1" rel="noopener noreferrer">
+              bookingpage_1
+              </a>),
+              key: 'bookingpage_1',
+          },
+          {
+            label: 'Reserva2',
+            key: 'Reserva2',
+          },
+        ],
+      },
+];
+
 
 function App() {
-
-  //MENU
-  const [value, setValue] = React.useState('Home');
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue)
+  
+  const [current, setCurrent] = useState('mail');
+  const onClick = (e) => {
+    console.log('click ', e);
+    setCurrent(e.key);
   };
-
 
   return (
     <>
-    <body>
       <header>
-        <Container>
-        <Row>
-          <Col>
-            <Box>
-              <BottomNavigation value={value} onChange={handleChange} sx={{ position: 'top', bottom: 0, left: 0, right: 0 }} elevation={0}>
-                <BottomNavigationAction
-                  id="colorBt"
-                  label="Home"
-                  href="/Home"
-                  icon={<HomeIcon id="icon" />} />
-                <BottomNavigationAction
-                  id="colorBt"
-                  label="About"
-                  href="/About"
-                  icon={<ShoppingCartRoundedIcon id="icon" />} />
-                <BottomNavigationAction
-                  id="colorBt"
-                  label="Products"
-                  href="/Products"
-                  icon={<SearchIcon id="icon" />} />
-                <BottomNavigationAction
-                  id="colorBt"
-                  label="Pricing"
-                  href="/Pricing"
-                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
-                <BottomNavigationAction
-                  id="colorBt"
-                  label="Blog"
-                  href="/Blog"
-                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
-                <BottomNavigationAction
-                  id="colorBt"
-                  label="Jobs"
-                  href="/Jobs"
-                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
-                <BottomNavigationAction
-                  id="colorBt"
-                  label="More"
-                  href="/More"
-                  icon={<HistoryToggleOffRoundedIcon id="icon" />} />
-              </BottomNavigation>
-            </Box>
-          </Col>
-        </Row>
-        </Container>
+      <main>
+        <div>
+          
+        </div>
+      </main>
       </header>
-      <content>
-        <Rotas />
-      </content>
+    <body>
+    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+      <Rotas/>
+    </body>
       <footer>
 
       </footer>
-    </body>
     </>
 
   )
+
 }
 
-export default App
+export default App;
