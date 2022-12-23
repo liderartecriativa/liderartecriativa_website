@@ -1,8 +1,7 @@
 
 import './App.scss'
-import React,  { useState }  from 'react'
-import {Rotas} from './Routes'
-
+import React, { useState } from 'react'
+import { Rotas } from './Routes'
 import { Menu } from 'antd';
 
 
@@ -50,25 +49,27 @@ const items = [
   {
     label: 'Mais',
     key: 'SubMenu',
-      children: [
-          {
-            label:(
-              <a href="/bookingpage_1" rel="noopener noreferrer">
-              bookingpage_1
-              </a>),
-              key: 'bookingpage_1',
-          },
-          {
-            label: 'Reserva2',
-            key: 'Reserva2',
-          },
-        ],
+    children: [
+      {
+        label: (
+          <a href="/Bookingpage1" rel="noopener noreferrer">
+            Reserva
+          </a>),
+        key: 'bookingpage1',
       },
+      {
+        label: (<a href="/Bookingpage2" rel="noopener noreferrer">
+          Reserva2
+        </a>),
+        key: 'bookingpage1',
+      },
+    ],
+  },
 ];
 
 
 function App() {
-  
+
   const [current, setCurrent] = useState('mail');
   const onClick = (e) => {
     console.log('click ', e);
@@ -78,16 +79,16 @@ function App() {
   return (
     <>
       <header>
-      <main>
-        <div>
-          
-        </div>
-      </main>
+        <main>
+          <div>
+
+          </div>
+        </main>
       </header>
-    <body>
-    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
-      <Rotas/>
-    </body>
+      <body>
+        <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+        <Rotas />
+      </body>
       <footer>
 
       </footer>
