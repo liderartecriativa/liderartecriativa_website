@@ -7,4 +7,4 @@ setTimeout(() =>  {ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-) }, 1000); //TIME DE CARREGAMENTO DO LOADING
+) }, 500); //TIME DE CARREGAMENTO DO LOADING
