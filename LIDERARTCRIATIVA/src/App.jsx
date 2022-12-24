@@ -75,20 +75,8 @@ const items = [
   },
 ];
 
-
 function App() {
-  
-const  darkMode = () => {
-
-  const element = document.body;
-    element.className = "dark-mode";
-  
-  }
-  const  lightMode = () => {
-    const  element = document.body;
-    element.className = "light-mode";
-  
-  }
+ 
   //LOADING DISPLAYNONE
   document.getElementById("loading").style.display = "none";
 
