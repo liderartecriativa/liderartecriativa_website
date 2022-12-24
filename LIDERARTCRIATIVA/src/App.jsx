@@ -118,8 +118,7 @@ const  darkMode = () => {
               }}
             >
               <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} overflowedIndicator={<ArrowDownOutlined />} />
-              <button onClick={darkMode}>Darkmode</button>
-              <button onClick={lightMode}>LightMode</button>
+             
             </ConfigProvider>
 
           </Col>
