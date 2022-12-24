@@ -9,5 +9,24 @@ $quinta-cor:#A62957;
 #Content {background-color: rgb(146, 101, 140);}
 #Footer {background-color: rgb(255, 255, 255);}
 
+//DARKMODE INITE
+body {
+    background-color: white;
+    color: black;
+    padding: 0px;
+    box-sizing:  content-box;  
+  }
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+.light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+//DARKMODE FINISH
 
 .Cor{color:$quinta-cor}
+
+

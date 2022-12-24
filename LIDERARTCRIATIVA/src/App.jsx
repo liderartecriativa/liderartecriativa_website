@@ -8,7 +8,8 @@ import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { DownOutlined } from '@ant-design/icons';
 import { ArrowDownOutlined } from '@ant-design/icons';
-import {ConfigProvider} from 'antd'
+import { ConfigProvider } from 'antd'
+
 const items = [
   {
     label: (
@@ -76,7 +77,18 @@ const items = [
 
 
 function App() {
+  
+const  darkMode = () => {
 
+  const element = document.body;
+    element.className = "dark-mode";
+  
+  }
+  const  lightMode = () => {
+    const  element = document.body;
+    element.className = "light-mode";
+  
+  }
   //LOADING DISPLAYNONE
   document.getElementById("loading").style.display = "none";
 
@@ -91,6 +103,7 @@ function App() {
 
   return (
     <>
+      <body>
       <header>
         <Row gutter={[8, 8]} justify={'center'} align={'middle'} >
           <Col span={15}>
@@ -105,11 +118,14 @@ function App() {
               }}
             >
               <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} overflowedIndicator={<ArrowDownOutlined />} />
+              <button onClick={darkMode}>Darkmode</button>
+              <button onClick={lightMode}>LightMode</button>
             </ConfigProvider>
+
           </Col>
         </Row>
       </header>
-      <body>
+    
         <Rotas />
       </body>
       <footer>
@@ -119,5 +135,4 @@ function App() {
   )
 
 }
-
 export default App;
