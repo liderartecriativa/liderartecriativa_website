@@ -7,7 +7,8 @@ import { Col, Row } from 'antd';
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { DownOutlined } from '@ant-design/icons';
-
+import { ArrowDownOutlined } from '@ant-design/icons';
+import {ConfigProvider} from 'antd'
 const items = [
   {
     label: (
@@ -75,7 +76,7 @@ const items = [
 
 
 function App() {
-  
+
   //LOADING DISPLAYNONE
   document.getElementById("loading").style.display = "none";
 
@@ -86,28 +87,32 @@ function App() {
     setCurrent(e.key);
   };
 
+
+
   return (
     <>
       <header>
         <Row gutter={[8, 8]} justify={'center'} align={'middle'} >
           <Col span={15}>
-
             <Avatar size="large" icon={<UserOutlined />} src="src/assets/logo.png" />
-
-
           </Col>
           <Col span={9}>
-            <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+            <ConfigProvider
+              theme={{
+                token: {
+                  colorPrimary: '#A62957',
+                },
+              }}
+            >
+              <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} overflowedIndicator={<ArrowDownOutlined />} />
+            </ConfigProvider>
           </Col>
-
         </Row>
-
       </header>
       <body>
         <Rotas />
       </body>
       <footer>
-
       </footer>
 
     </>
