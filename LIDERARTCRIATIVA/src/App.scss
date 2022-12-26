@@ -1,32 +1,81 @@
 //LAYOUT
 
 $primeira-cor: #BF4C41;
-$segunda-cor:#D97F30;
-$terceira-cor:#7ED9AE;
-$quarta-cor:#548DBF;
-$quinta-cor:#A62957;
+$segunda-cor: #D97F30;
+$terceira-cor: #7ED9AE;
+$quarta-cor: #548DBF;
+$quinta-cor: #A62957;
 
-#Content {background-color: rgb(146, 101, 140);}
-#Footer {background-color: rgb(255, 255, 255);}
+#Content {
+  background-color: rgb(146, 101, 140);
+}
 
-//DARKMODE INITE
-body {
-    background-color: white;
-    color: black;
-    padding: 0px;
-    box-sizing:  content-box;  
-  }
-.dark-mode {
-    background-color: black;
-    color: white;
-  }
-.light-mode {
-    background-color: white;
-    color: black;
-  }
-  
-//DARKMODE FINISH
-
-.Cor{color:$quinta-cor}
+#Footer {
+  background-color: rgb(255, 255, 255);
+}
 
 
+.Cor {
+  color: $quinta-cor
+}
+
+
+//HOME 
+
+
+#code {
+  margin-top: 40px;
+  color: $quarta-cor;
+}
+
+#code2 {
+  margin-top: 40px;
+  color: $quarta-cor;
+}
+
+
+
+#title {
+  color: $quinta-cor;
+
+  line-height: 3rem;
+
+}
+
+#paragraph {
+  margin-top: 16px;
+
+
+}
+
+#rotate {
+  rotate: -60deg;
+}
+
+
+#button {
+  background-color: $quinta-cor;
+  color: white;
+  width: 199px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 32px;
+  text-align: center;
+
+
+}
+
+.circle {
+
+  width: 487.06px;
+  height: 493.81px;
+  border-radius: 100%;
+  background-color: #A62957;
+  max-width: auto;
+  max-height: 100%;
+  display: flex;
+  margin: 0px;
+}
+
+#teste{display:flex}

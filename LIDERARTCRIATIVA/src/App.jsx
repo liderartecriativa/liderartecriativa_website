@@ -76,7 +76,7 @@ const items = [
 ];
 
 function App() {
- 
+
   //LOADING DISPLAYNONE
   document.getElementById("loading").style.display = "none";
 
@@ -87,32 +87,30 @@ function App() {
     setCurrent(e.key);
   };
 
-
-
   return (
     <>
       <body>
-      <header>
-        <Row gutter={[8, 8]} justify={'center'} align={'middle'} >
-          <Col span={15}>
-            <Avatar size="large" icon={<UserOutlined />} src="src/assets/logo.png" />
-          </Col>
-          <Col span={9}>
-            <ConfigProvider
-              theme={{
-                token: {
-                  colorPrimary: '#A62957',
-                },
-              }}
-            >
-              <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} overflowedIndicator={<ArrowDownOutlined />} />
-             
-            </ConfigProvider>
+        <header>
+          <Row gutter={[8, 8]} justify={'center'} align={'middle'} >
+            <Col span={15}>
+              <Avatar size="large" icon={<UserOutlined />} src="src/assets/logo.png" />
+            </Col>
+            <Col span={9}>
+              <ConfigProvider
+                theme={{
+                  token: {
+                    colorPrimary: '#A62957',
+                  },
+                }}
+              >
+                <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} overflowedIndicator={<ArrowDownOutlined />} />
 
-          </Col>
-        </Row>
-      </header>
-    
+              </ConfigProvider>
+
+            </Col>
+          </Row>
+        </header>
+
         <Rotas />
       </body>
       <footer>
