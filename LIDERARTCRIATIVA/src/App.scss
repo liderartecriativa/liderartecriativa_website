@@ -5,13 +5,20 @@ $segunda-cor: #D97F30;
 $terceira-cor: #7ED9AE;
 $quarta-cor: #548DBF;
 $quinta-cor: #A62957;
+$white:#FFFFFF;
+#Content {
+  background-color: rgb(146, 101, 140);
+}
 
-#Content {background-color: rgb(146, 101, 140);}
-#Footer { background-color: rgb(255, 255, 255);}
-.Cor { color: $quinta-cor}
+#Footer {
+  background-color: rgb(255, 255, 255);
+}
 
-//HOME 
-#content {
+.Cor {
+  color: $quinta-cor
+}
+
+@mixin layout-default {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -21,22 +28,44 @@ $quinta-cor: #A62957;
   z-index: 1;
 }
 
-#logo{width:80px; height: 80px;  }
-#logo2{width:80px; height: 80px; rotate:-60deg;}
+
+//HOME 
+#content {
+  @include layout-default
+}
+
+#Layout {
+  background-color: transparent;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 25px;
+}
+
+#logo2 {
+  width: 80px;
+  height: 80px;
+  rotate: -60deg;
+}
 
 
 #code2 {
   margin-top: 40px;
   color: $quarta-cor;
 }
+
 #title {
   color: $quinta-cor;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
+
 #paragraph {
   margin-top: 16px;
-
+  line-height: 1.5rem;
 }
+
 #button-Home {
   background-color: $quinta-cor;
   color: white;
@@ -48,14 +77,41 @@ $quinta-cor: #A62957;
   text-align: center;
   font-size: medium;
 }
+
 #circle {
-  
+  margin-top: 25px;
   width: 487.06px;
   height: 493.81px;
   border-radius: 100%;
   background-color: #A62957;
   max-width: 100%;
   max-height: auto;
-  margin: 0px;
   object-fit: contain;
+  padding: 0px;
+}
+
+#developer-Col {
+  margin-top: 40px;
+  background-color:rgb(14, 6, 54);
+}
+
+#developer-Title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 40px 0px 10px 0px;
+  color:$terceira-cor;
+}
+
+#developer-Subtitle {
+  font-size: 32px;
+  margin: 20px 0px 10px 0px;
+  color: $white;
+}
+
+#developer-Description {
+  line-height: 1.5rem;
+  font-size: 10px;
+  margin: 20px 0px 10px 0px;
+  color: $white;
 }
