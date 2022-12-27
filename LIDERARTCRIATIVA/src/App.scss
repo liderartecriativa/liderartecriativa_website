@@ -20,36 +20,23 @@ $quinta-cor: #A62957;
   position: relative;
   z-index: 1;
 }
-#code {
-  margin-top: 40px;
-  color: $quarta-cor;
-}
+
+#logo{width:80px; height: 80px;  }
+#logo2{width:80px; height: 80px; rotate:-60deg;}
+
 
 #code2 {
   margin-top: 40px;
   color: $quarta-cor;
 }
-
-
-
 #title {
   color: $quinta-cor;
-
   line-height: 3rem;
-
 }
-
 #paragraph {
   margin-top: 16px;
 
-
 }
-
-#rotate {
-  rotate: -60deg;
-}
-
-
 #button-Home {
   background-color: $quinta-cor;
   color: white;
@@ -60,11 +47,9 @@ $quinta-cor: #A62957;
   margin-top: 32px;
   text-align: center;
   font-size: medium;
-
 }
-
-.circle {
-
+#circle {
+  
   width: 487.06px;
   height: 493.81px;
   border-radius: 100%;
@@ -73,8 +58,4 @@ $quinta-cor: #A62957;
   max-height: auto;
   margin: 0px;
   object-fit: contain;
-}
-
-#teste {
-  display: flex
 }

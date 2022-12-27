@@ -110,12 +110,10 @@ function App() {
             </Col>
           </Row>
         </header>
-
         <Rotas />
       </body>
       <footer>
       </footer>
-
     </>
   )
 
