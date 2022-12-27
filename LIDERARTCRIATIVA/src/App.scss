@@ -6,23 +6,20 @@ $terceira-cor: #7ED9AE;
 $quarta-cor: #548DBF;
 $quinta-cor: #A62957;
 
-#Content {
-  background-color: rgb(146, 101, 140);
-}
-
-#Footer {
-  background-color: rgb(255, 255, 255);
-}
-
-
-.Cor {
-  color: $quinta-cor
-}
-
+#Content {background-color: rgb(146, 101, 140);}
+#Footer { background-color: rgb(255, 255, 255);}
+.Cor { color: $quinta-cor}
 
 //HOME 
-
-
+#content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh);
+  min-width: fit-content;
+  position: relative;
+  z-index: 1;
+}
 #code {
   margin-top: 40px;
   color: $quarta-cor;
@@ -53,7 +50,7 @@ $quinta-cor: #A62957;
 }
 
 
-#button {
+#button-Home {
   background-color: $quinta-cor;
   color: white;
   width: 199px;
@@ -62,7 +59,7 @@ $quinta-cor: #A62957;
   border-radius: 10px;
   margin-top: 32px;
   text-align: center;
-
+  font-size: medium;
 
 }
 
@@ -72,10 +69,12 @@ $quinta-cor: #A62957;
   height: 493.81px;
   border-radius: 100%;
   background-color: #A62957;
-  max-width: auto;
-  max-height: 100%;
-  display: flex;
+  max-width: 100%;
+  max-height: auto;
   margin: 0px;
+  object-fit: contain;
 }
 
-#teste{display:flex}
+#teste {
+  display: flex
+}

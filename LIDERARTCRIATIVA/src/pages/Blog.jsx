@@ -2,6 +2,9 @@ export const Blog = () => {
 
 
     return (
-        <p>EU SOU O BLOG</p>
+        <div id="content">
+            <p>EU SOU O BLOG</p>
+
+        </div>
     );
 }

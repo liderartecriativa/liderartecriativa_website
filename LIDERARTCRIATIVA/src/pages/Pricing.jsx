@@ -2,6 +2,9 @@ export const Pricing = () => {
 
 
     return (
-        <p>EU SOU O PREÇO</p>
+        <div id="content">
+
+            <p>EU SOU O PREÇO</p>
+        </div>
     );
 }

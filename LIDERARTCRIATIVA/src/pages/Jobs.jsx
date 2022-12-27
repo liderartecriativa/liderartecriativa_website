@@ -2,6 +2,9 @@ export const Jobs = () => {
 
 
     return (
-        <p>EU SOU O TRABALHO</p>
+        <div id="content"> 
+            <p>EU SOU O TRABALHO</p>
+
+        </div>
     );
 }

@@ -2,6 +2,9 @@ export const Products = () => {
 
 
     return (
-        <p>EU SOU O PRODUTO</p>
+        <div id="content">
+
+            <p>EU SOU O PRODUTO</p>
+        </div>
     );
 }
