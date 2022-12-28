@@ -89,32 +89,34 @@ function App() {
 
   return (
     <>
-     <Layout style={{ padding: '0 24px 24px 24px', background:'transparent' }}>
-      <body>
-        <header>
-          <Row gutter={[8, 8]} justify={'center'} align={'middle'} >
-            <Col span={15}>
-              <Avatar size="large" icon={<UserOutlined />} src="src/assets/logo.png" />
-            </Col>
-            <Col span={9}>
-              <ConfigProvider
-                theme={{
-                  token: {
-                    colorPrimary: '#A62957',
-                  },
-                }}
-              >
-                <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} overflowedIndicator={<ArrowDownOutlined />} />
+      <Layout style={{ padding: '0 24px 24px 24px', background: 'transparent' }}>
+        <body>
+          <header>
+            <Row gutter={[8, 8]} justify={'center'} align={'middle'} >
+              <Col span={15}>
+                <a href="/">
+                  <Avatar size="large" icon={<UserOutlined />} src="src/assets/logo.png" />
+                </a>
+              </Col>
+              <Col span={9}>
+                <ConfigProvider
+                  theme={{
+                    token: {
+                      colorPrimary: '#A62957',
+                    },
+                  }}
+                >
+                  <Menu id="MenuBar" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} overflowedIndicator={<ArrowDownOutlined />} />
 
-              </ConfigProvider>
+                </ConfigProvider>
 
-            </Col>
-          </Row>
-        </header>
-        <Rotas />
-      </body>
-      <footer>
-      </footer>
+              </Col>
+            </Row>
+          </header>
+          <Rotas />
+        </body>
+        <footer>
+        </footer>
       </Layout>
     </>
   )
