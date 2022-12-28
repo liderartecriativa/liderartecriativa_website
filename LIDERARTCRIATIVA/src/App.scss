@@ -120,7 +120,10 @@ $white: #FFFFFF;
 @mixin margin-icon-linguage {
   margin: 40px 20px 0px 0px;
 }
-
+#icon-curly{
+  @include margin-icon-linguage;
+  color:$white;
+}
 #icon-Html {
   @include margin-icon-linguage;
   color: #FF5722;
@@ -152,6 +155,6 @@ $white: #FFFFFF;
 }
 
 #icon-React {
-  @include margin-icon-linguage;
+
   color:#61DAFB;
 }
