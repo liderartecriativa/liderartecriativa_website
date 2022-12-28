@@ -3,7 +3,7 @@ import './App.scss'
 import React, { useState } from 'react'
 import { Rotas } from './Routes'
 import { Menu } from 'antd';
-import { Col, Row } from 'antd';
+import { Col, Row, Layout } from 'antd';
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { DownOutlined } from '@ant-design/icons';
@@ -89,6 +89,7 @@ function App() {
 
   return (
     <>
+     <Layout style={{ padding: '0 24px 24px 24px', background:'transparent' }}>
       <body>
         <header>
           <Row gutter={[8, 8]} justify={'center'} align={'middle'} >
@@ -114,6 +115,7 @@ function App() {
       </body>
       <footer>
       </footer>
+      </Layout>
     </>
   )
 

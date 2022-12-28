@@ -1,4 +1,5 @@
 
+
 import { Col, Row } from 'antd';
 import { Button, Space } from 'antd';
 
@@ -8,6 +9,7 @@ export const Home = () => {
     return (
 
         <div id="content">
+
             <Row justify={'center'} gutter={[48, 8]}>
                 <Col flex={'auto'}>
                     <div align={'center'}>
@@ -35,7 +37,7 @@ export const Home = () => {
                     </div>
                 </Col>
                 <Col span={24} align={'center'} id="developer-Col">
-                <i  id="icon-curly" class="fa-brands fa-connectdevelop fa-5x"></i>
+                    <i id="icon-curly" class="fa-brands fa-connectdevelop fa-5x"></i>
                     <h5 id="developer-Title">Precisa de desenvolvedores de primeira linha?</h5>
                     <h4 id="developer-Subtitle">Você está no lugar certo</h4>
                     <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
@@ -50,6 +52,7 @@ export const Home = () => {
                     <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
                 </Col>
             </Row>
+
         </div>
 
     );
