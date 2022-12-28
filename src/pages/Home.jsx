@@ -41,7 +41,7 @@ export const Home = () => {
                     <h4 id="developer-Subtitle">Você está no lugar certo</h4>
                     <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
                 </Col>
-              
+
                 <Col id="parametros" flex={'auto'} align={'center'} >
                     <div>
                         <h1>Precisa construir sua aplicação?</h1>
@@ -57,7 +57,7 @@ export const Home = () => {
                     <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
 
                 </Col>
-                <Col  id="parametros" flex={'auto'} align={'center'}>
+                <Col id="parametros" flex={'auto'} align={'center'}>
                     <div id="equip">
                         <img src='./src/assets/equip2.svg' width="500" />
                     </div>
