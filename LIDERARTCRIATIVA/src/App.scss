@@ -5,7 +5,8 @@ $segunda-cor: #D97F30;
 $terceira-cor: #7ED9AE;
 $quarta-cor: #548DBF;
 $quinta-cor: #A62957;
-$white:#FFFFFF;
+$white: #FFFFFF;
+
 #Content {
   background-color: rgb(146, 101, 140);
 }
@@ -73,7 +74,7 @@ $white:#FFFFFF;
   height: 48px;
   border: none;
   border-radius: 10px;
-  margin-top: 32px;
+  margin-top: 20px;
   text-align: center;
   font-size: medium;
 }
@@ -92,7 +93,7 @@ $white:#FFFFFF;
 
 #developer-Col {
   margin-top: 40px;
-  background-color:rgb(14, 6, 54);
+  background-color: rgb(14, 6, 54);
 }
 
 #developer-Title {
@@ -100,7 +101,7 @@ $white:#FFFFFF;
   font-weight: bold;
   text-transform: uppercase;
   margin: 40px 0px 10px 0px;
-  color:$terceira-cor;
+  color: $terceira-cor;
 }
 
 #developer-Subtitle {
@@ -114,4 +115,43 @@ $white:#FFFFFF;
   font-size: 10px;
   margin: 20px 0px 10px 0px;
   color: $white;
+}
+
+@mixin margin-icon-linguage {
+  margin: 40px 20px 0px 0px;
+}
+
+#icon-Html {
+  @include margin-icon-linguage;
+  color: #FF5722;
+}
+
+#icon-Css {
+  @include margin-icon-linguage;
+  color: #2196F3;
+}
+
+#icon-Js {
+  margin: 40px 20px 0px 0px;
+  color: #FFDF00;
+}
+
+#icon-Vue {
+  @include margin-icon-linguage;
+  color: #4DBA87;
+}
+
+#icon-Angular {
+  @include margin-icon-linguage;
+  color: #DD0031;
+}
+
+#icon-Bootstrap {
+  @include margin-icon-linguage;
+  color: #5E3B7F;
+}
+
+#icon-React {
+  @include margin-icon-linguage;
+  color:#61DAFB;
 }
