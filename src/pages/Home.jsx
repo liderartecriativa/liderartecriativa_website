@@ -44,7 +44,10 @@ export const Home = () => {
 
                 <Col id="parametros" flex={'auto'} align={'center'} >
                     <div>
-                        <h1>Precisa construir sua aplicação?</h1>
+                        <p id="construcao">Precisa construir sua aplicação?</p>
+                    </div>
+                    <div>
+                        <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br/>continuar crescendo imediatamente. Somos especialistas em:</p>
                     </div>
                     <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
                     <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>

@@ -29,7 +29,9 @@ $white: #FFFFFF;
   position: relative;
   z-index: 1;
 }
-
+@mixin espacamento {
+  line-height: 1.5rem;
+}
 //HOME 
 #content {
   @include layout-default
@@ -145,7 +147,12 @@ $white: #FFFFFF;
   color: $white;
 }
 
-
+#construcao{
+  font-size: 32px;
+  color:$quinta-cor;
+  font-weight: bold;
+ 
+}
 
 #icon-curly {
   margin: 40px 0px 0px 0px;
@@ -199,7 +206,9 @@ $white: #FFFFFF;
 #parametros {
   padding: 64px 0px 64px 0px;
 }
-
+#crescer{
+ @include espacamento
+}
 #equip {
   max-width: 100%;
   max-height: auto;
