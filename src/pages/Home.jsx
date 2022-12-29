@@ -3,8 +3,12 @@ import React from 'react'
 import { Col, Row } from 'antd';
 import { Button, Space } from 'antd';
 
+//CoreUi Icons
+import CIcon from '@coreui/icons-react';
+import * as icon from '@coreui/icons';
 
 export const Home = () => {
+
 
 
     return (
@@ -41,39 +45,42 @@ export const Home = () => {
                     <h4 id="developer-Subtitle">Você está no lugar certo</h4>
                     <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
                 </Col>
-                <Row justify={'center'} gutter={[16, 8]}>
+                <Row justify={'center'} gutter={[16, 8]} >
                     <Col id="parametros" flex={'auto'} align={'center'} >
                         <div>
                             <p id="construcao">Precisa construir sua aplicação?</p>
                         </div>
                         <div>
-                            <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente. Somos especialistas em:</p>
+                            <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /><br /> Somos especialistas em:</p>
                         </div>
-                        <Col flex={'auto'} align={'center'} >
-
+                        <Col flex={'auto'} align={'center'}>
                             <div>
-                                <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
-
-                                <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
-
-                                <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-3x"></i>
-                            </div>
-
-                        </Col>
-                        <Col flex={'auto'} align={'center'} >
-                            <div>
-                                <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
-
-                                <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
-
-                                <i id="icon-Angular" class="fa-brands fa-angular fa-3x"></i>
+                                <Space size={130}>
+                                    <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
+                                    <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
+                                    <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-3x"></i>
+                                </Space>
+                                <Space />
                             </div>
                         </Col>
                         <Col flex={'auto'} align={'center'} >
                             <div>
-                                <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
-                                <i class="cib-next-js"></i>
-                                <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
+                                <Space size={135}>
+                                    <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
+                                    <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
+                                    <i id="icon-Angular" class="fa-brands fa-angular fa-3x"></i>
+                                </Space>
+                            </div>
+                        </Col>
+
+                        <Col flex={'auto'} align={'center'} >
+                            <div>
+                                <Space size={122}>
+                                    <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
+                                    <CIcon icon={icon.cibNextJs} width={70} height={45} />
+                                    <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
+                                </Space>
+                                <Space />
                             </div>
                         </Col>
                     </Col>

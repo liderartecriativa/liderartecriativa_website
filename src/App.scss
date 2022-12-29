@@ -33,8 +33,14 @@ $white: #FFFFFF;
 @mixin espacamento {
   line-height: 1.5rem;
 }
-@mixin padding-icons{
- padding:20px;
+
+@mixin padding-icons {
+  padding: 20px;
+}
+
+@mixin icon-size {
+  width: 45px;
+  height: 45px;
 }
 
 
@@ -128,7 +134,6 @@ $white: #FFFFFF;
 
 
 #developer-Col {
-
   background-color: rgb(14, 6, 54);
 }
 
@@ -168,50 +173,49 @@ $white: #FFFFFF;
 
 #icon-Html {
   color: #FF5722;
-  @include padding-icons;
-
-
+  @include icon-size()
 }
 
 #icon-Css {
   color: #2196F3;
-  @include padding-icons;
-
+  @include icon-size()
 }
 
 #icon-Js {
   color: #FFDF00;
-  @include padding-icons;
-
+  @include icon-size()
 }
 
 #icon-Vue {
   color: #4DBA87;
-  @include padding-icons; 
- 
+
+  @include icon-size()
 }
 
 #icon-Angular {
   color: #DD0031;
-  @include padding-icons;
+
 
 }
 
 #icon-Bootstrap {
   color: #5E3B7F;
-  @include padding-icons;
- 
+  @include icon-size()
 }
 
 #icon-React {
   color: #61DAFB;
-  @include padding-icons;
-
+  @include icon-size()
 }
 
-#icon-Github{
-  @include padding-icons;
+#icon-Github {
+  @include icon-size()
+}
 
+#icon-Nextjs {
+  width: 48px;
+  height: 48px;
+  background: none;
 }
 
 #parametros {
