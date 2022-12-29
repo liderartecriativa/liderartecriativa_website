@@ -49,16 +49,27 @@ export const Home = () => {
                     <div>
                         <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br/>continuar crescendo imediatamente. Somos especialistas em:</p>
                     </div>
+                   <Col span={8}>
                     <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
+                   
                     <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
+                   
                     <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-3x"></i>
+                   </Col>
+                    <Col span={8}>
                     <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
+                   
                     <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
+                   
                     <i id="icon-Angular" class="fa-brands fa-angular fa-3x"></i>
+                    </Col>
+                    <Col span={8}>
                     <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
+                  
                     <img id="icon-Nextjs" src="./src/assets/nextjs.svg" />
+                  
                     <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
-
+                    </Col>
                 </Col>
                 <Col id="parametros" flex={'auto'} align={'center'}>
                     <div id="equip">
