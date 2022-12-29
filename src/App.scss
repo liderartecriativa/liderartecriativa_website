@@ -29,9 +29,15 @@ $white: #FFFFFF;
   position: relative;
   z-index: 1;
 }
+
 @mixin espacamento {
   line-height: 1.5rem;
 }
+@mixin padding-icons{
+ padding:20px;
+}
+
+
 //HOME 
 #content {
   @include layout-default
@@ -147,11 +153,11 @@ $white: #FFFFFF;
   color: $white;
 }
 
-#construcao{
+#construcao {
   font-size: 32px;
-  color:$quinta-cor;
+  color: $quinta-cor;
   font-weight: bold;
- 
+
 }
 
 #icon-curly {
@@ -161,54 +167,61 @@ $white: #FFFFFF;
 }
 
 #icon-Html {
-  
   color: #FF5722;
+  @include padding-icons;
+
+
 }
 
 #icon-Css {
- 
   color: #2196F3;
+  @include padding-icons;
+
 }
 
 #icon-Js {
- 
   color: #FFDF00;
+  @include padding-icons;
+
 }
 
 #icon-Vue {
-  
   color: #4DBA87;
+  @include padding-icons; 
+ 
 }
 
 #icon-Angular {
- 
   color: #DD0031;
+  @include padding-icons;
+
 }
 
 #icon-Bootstrap {
- 
   color: #5E3B7F;
+  @include padding-icons;
+ 
 }
 
 #icon-React {
-  
   color: #61DAFB;
+  @include padding-icons;
+
 }
 
-#icon-Nextjs {
-
-  
-  width: 55px;
-  height: 55px;
+#icon-Github{
+  @include padding-icons;
 
 }
 
 #parametros {
   padding: 25px 0px 25px 0px;
 }
-#crescer{
- @include espacamento
+
+#crescer {
+  @include espacamento
 }
+
 #equip {
   max-width: 100%;
   max-height: auto;
