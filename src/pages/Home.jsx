@@ -72,9 +72,7 @@ export const Home = () => {
                         <Col flex={'auto'} align={'center'} >
                             <div>
                                 <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
-
-                               
-
+                                <i class="cib-next-js"></i>
                                 <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
                             </div>
                         </Col>

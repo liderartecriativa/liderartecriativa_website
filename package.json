@@ -11,6 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "@coreui/coreui": "^4.2.5",
+    "@coreui/icons": "^2.1.0",
     "@mui/material": "^5.11.1",
     "antd": "^5.1.0",
     "bootstrap": "^5.2.3",
