@@ -47,29 +47,45 @@ export const Home = () => {
                         <p id="construcao">Precisa construir sua aplicação?</p>
                     </div>
                     <div>
-                        <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br/>continuar crescendo imediatamente. Somos especialistas em:</p>
+                        <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente. Somos especialistas em:</p>
                     </div>
-                   <Col span={8}>
-                    <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
-                   
-                    <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
-                   
-                    <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-3x"></i>
-                   </Col>
-                    <Col span={8}>
-                    <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
-                   
-                    <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
-                   
-                    <i id="icon-Angular" class="fa-brands fa-angular fa-3x"></i>
+                    <Row>
+                    <Col flex={'auto'} align={'center'} >
+
+                        <div>
+                            <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
+                        </div>
+                        <div>
+                            <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
+                        </div>
+                        <div>
+                            <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-3x"></i>
+                        </div>
+
                     </Col>
-                    <Col span={8}>
-                    <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
-                  
-                    <img id="icon-Nextjs" src="./src/assets/nextjs.svg" />
-                  
-                    <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
+                    <Col flex={'auto'} align={'center'} >
+                        <div>
+                            <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
+                        </div>
+                        <div>
+                            <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
+                        </div>
+                        <div>
+                            <i id="icon-Angular" class="fa-brands fa-angular fa-3x"></i>
+                        </div>
                     </Col>
+                    <Col flex={'auto'} align={'center'} >
+                        <div>
+                            <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
+                        </div>
+                        <div>
+                            <img id="icon-Nextjs" src="./src/assets/nextjs.svg" />
+                        </div>
+                        <div>
+                            <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
+                        </div>
+                    </Col>
+                    </Row>
                 </Col>
                 <Col id="parametros" flex={'auto'} align={'center'}>
                     <div id="equip">
