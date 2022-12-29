@@ -54,7 +54,7 @@ export const Home = () => {
                             <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /><br /> Somos especialistas em:</p>
                         </div>
                         <Col flex={'auto'} align={'center'}>
-                            <div>
+                            <div id="margin-Icons">
                                 <Space size={130}>
                                     <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
                                     <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
@@ -64,7 +64,7 @@ export const Home = () => {
                             </div>
                         </Col>
                         <Col flex={'auto'} align={'center'} >
-                            <div>
+                            <div id="margin-Icons">
                                 <Space size={135}>
                                     <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
                                     <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
@@ -74,13 +74,12 @@ export const Home = () => {
                         </Col>
 
                         <Col flex={'auto'} align={'center'} >
-                            <div>
+                            <div id="margin-Icons">
                                 <Space size={122}>
                                     <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
                                     <CIcon icon={icon.cibNextJs} width={70} height={45} />
                                     <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
                                 </Space>
-                                <Space />
                             </div>
                         </Col>
                     </Col>
