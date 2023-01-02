@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { Col, Row } from 'antd';
 import { Button, Space } from 'antd';
-import { useState,useEffect } from 'react'
+
 //CoreUi Icons
 import CIcon from '@coreui/icons-react';
 import * as icon from '@coreui/icons';
@@ -43,6 +43,7 @@ export const Home = () => {
                     <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
                 </Col>
                 <Row justify={'center'} gutter={[16, 8]} >
+
                     <Col id="parametros" flex={'auto'} align={'center'} >
                         <div>
                             <p id="construcao">Precisa construir sua aplicação?</p>
@@ -69,7 +70,6 @@ export const Home = () => {
                                 </Space>
                             </div>
                         </Col>
-
                         <Col flex={'auto'} align={'center'} >
                             <div id="margin-Icons">
                                 <Space size={122}>
@@ -80,6 +80,7 @@ export const Home = () => {
                             </div>
                         </Col>
                     </Col>
+
                     <Col id="parametros" flex={'auto'} align={'center'}>
 
                       
