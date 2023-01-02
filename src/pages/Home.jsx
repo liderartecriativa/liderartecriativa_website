@@ -19,8 +19,7 @@ export const Home = () => {
                     <div align={'center'}>
                         <img src="src/assets/logo2.png" id="logo" />
                     </div>
-                    <div id="title" align={'center'}>
-                       
+                    <div id="title" align={'center'}>                      
                         <h1>Desenvolvedores <br /> de Softwere de elite
                             <br /> sob demanda!</h1>
                     </div>
