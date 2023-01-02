@@ -20,6 +20,7 @@ export const Home = () => {
                         <img src="src/assets/logo2.png" id="logo" />
                     </div>
                     <div id="title" align={'center'}>
+                        <h1>Desenvolvedores <br /> de Software  de Elite
                         <h1>Desenvolvedores <br /> de Softwere de elite
                             <br /> sob demanda!</h1>
                     </div>
