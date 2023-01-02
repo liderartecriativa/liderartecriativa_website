@@ -2,7 +2,6 @@
 import React from 'react'
 import { Col, Row } from 'antd';
 import { Button, Space } from 'antd';
-import { useState } from 'react';
 
 //CoreUi Icons
 import CIcon from '@coreui/icons-react';
@@ -57,14 +56,14 @@ export const Home = () => {
                     </Col>
                     <Row justify={'center'} gutter={[16, 8]} >
 
-                        <Col id="parametros" flex={'auto'} align={'center'} >
+                        <Col id="parametros" span={24} align={'center'} >
                             <div>
                                 <p id="construcao">Precisa construir sua aplicação?</p>
                             </div>
                             <div>
                                 <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /><br /> <b>Somos especialistas em:</b></p>
                             </div>
-                            <Col flex={'auto'} align={'center'}>
+                            <Col span={24} align={'center'}>
                                 {lang == 0 && (
                                     <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
 
@@ -95,11 +94,7 @@ export const Home = () => {
                                     <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
                                 )}
                             </Col>
-                            <Col flex={'auto'} align={'center'}>
-
-
-
-                            </Col>
+                           
                         </Col>
                     </Row>
                 </Row>
