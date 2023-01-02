@@ -15,10 +15,7 @@ export const Home = () => {
 
         <div id="content">
             <Row justify={'center'} gutter={[48, 0]}>
-
-
                 <Col flex={'auto'} className="bg">
-
                     <div align={'center'}>
                         <img src="src/assets/logo2.png" id="logo" />
                     </div>
