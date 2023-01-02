@@ -1,14 +1,14 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Col, Row } from 'antd';
 import { Button, Space } from 'antd';
-
+import { useState,useEffect } from 'react'
 //CoreUi Icons
 import CIcon from '@coreui/icons-react';
 import * as icon from '@coreui/icons';
 
-export const Home = () => {
 
+export const Home = () => {
 
 
     return (
@@ -19,7 +19,7 @@ export const Home = () => {
                     <div align={'center'}>
                         <img src="src/assets/logo2.png" id="logo" />
                     </div>
-                    <div id="title" align={'center'}>                      
+                    <div id="title" align={'center'}>
                         <h1>Desenvolvedores <br /> de Softwere de elite
                             <br /> sob demanda!</h1>
                     </div>
@@ -81,9 +81,8 @@ export const Home = () => {
                         </Col>
                     </Col>
                     <Col id="parametros" flex={'auto'} align={'center'}>
-                        <div id="equip">
-                            <img src='./src/assets/equip2.svg' width="500" />
-                        </div>
+
+                      
                     </Col>
                 </Row>
             </Row>
