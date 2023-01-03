@@ -155,8 +155,9 @@ $white: #FFFFFF;
 }
 
 #construcao {
+  margin: 20px 0px 10px 0px;
   font-size: 32px;
-  color: $quinta-cor;
+  color: $white;
   font-weight: bold;
 
 }
@@ -176,13 +177,12 @@ $white: #FFFFFF;
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
+ 
+  
+ 
 }
 
 .line {
@@ -192,13 +192,13 @@ $white: #FFFFFF;
   top: 0;
   left: 50%;
   background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
+  overflow:hidden;
 
     &::after{
     content: '';
     display: block;
     position: absolute;
-    height: 15vh;
+    height: 30vh;
     width: 100%;
     top: -50%;
     left: 0;
@@ -262,7 +262,9 @@ $white: #FFFFFF;
 
 #crescer {
   @include espacamento;
-  
+  color:$white;
+  font-size: 14px;
+
 }
 
 @mixin divlinguage {
@@ -277,5 +279,37 @@ $white: #FFFFFF;
 
 #html {
   @include divlinguage();
-
+  color:$white;
+}
+#css{
+  @include divlinguage();
+  color:#2196F3;
+}
+#bootstrap{
+  @include divlinguage();
+  color:#2196F3;
+}
+#js{
+  @include divlinguage();
+  color:#2196F3;
+}
+#vue{
+  @include divlinguage();
+  color:#2196F3;
+}
+#angular{
+  @include divlinguage();
+  color:#2196F3;
+}
+#react{
+  @include divlinguage();
+  color:#2196F3;
+}
+#nextjs{
+  @include divlinguage();
+  color:#2196F3;
+}
+#github{
+  @include divlinguage();
+  color:#2196F3;
 }
