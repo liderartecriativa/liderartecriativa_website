@@ -27,7 +27,8 @@ export const Home = () => {
     const paddingCol = {
         padding: '0px',
         margin: '0px',
-    }
+        
+    }   
 
     return (
         <>
