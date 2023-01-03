@@ -55,7 +55,6 @@ export const Home = () => {
                             <img src="src/assets/logo.png" id="logo2" />
                         </div>
                     </Col>
-
                     <Col span={24} align={'center'} id="developer-Col">
                         <i id="icon-curly" class="fa-brands fa-connectdevelop fa-5x fa-spin"></i>
                         <h5 id="developer-Title">Precisa de desenvolvedores de primeira linha?</h5>
@@ -166,11 +165,7 @@ export const Home = () => {
                         </div>
                     </Col>
                 </Row>
-
             </div>
         </>
-
-
-
     );
 }
