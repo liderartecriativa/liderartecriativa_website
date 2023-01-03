@@ -25,13 +25,13 @@ export const Home = () => {
 
     //ZERA O PADDING E MARGIN DAS COLUNAS NECESSARIAS
     const paddingCol = {
-        padding:'0px',
-        margin:'0px',
+        padding: '0px',
+        margin: '0px',
     }
 
     return (
         <>
-        
+
             <div id="content">
                 <Row justify={'center'} gutter={[48, 0]}>
                     <Col flex={'auto'} className="bg">
@@ -61,66 +61,71 @@ export const Home = () => {
                         <h4 id="developer-Subtitle">Você está no lugar certo</h4>
                         <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
                     </Col>
-                   
-                  
+                    <Col id="parametros" span={24} align={'center'} style={paddingCol}>
+                    <div className="lines">
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                        <div>
+                            <p id="construcao">Precisa construir sua aplicação?</p>
+                        </div>
+                        <div>
+                            <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /><br /> <b>Somos especialistas em:</b></p>
+                        </div>
+                        {lang == 0 && (
+                            <Row>
+                                <Col flex={'auto'} id="html" align={'center'}>
+                                    <i id="icon-Html" class="fa-brands fa-html5 fa-10x"></i>
+                                    <Col span={12}>
+                                        <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
+                                    </Col>
+                                </Col>
+                            </Row>
+                        )}
+                        {lang == 1 && (
+                            <div id="css" align={'center'}>
+                                <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
+                            </div>
+                        )}
+                        {lang == 2 && (
+                            <div id="bootstrap" align={'center'}>
+                                <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-3x"></i>
+                            </div>
+                        )}
+                        {lang == 3 && (
+                            <div id="js" align={'center'}>
+                                <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
+                            </div>
+                        )}
+                        {lang == 4 && (
+                            <div id="vue" align={'center'}>
+                                <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
+                            </div>
+                        )}
+                        {lang == 5 && (
+                            <div id="angular" align={'center'}>
+                                <i id="icon-Angular" class="fa-brands fa-angular fa-3x"></i>
+                            </div>
+                        )}
+                        {lang == 6 && (
+                            <div id="react" align={'center'}>
+                                <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
+                            </div>
+                        )}
+                        {lang == 7 && (
+                            <div id="nextjs" align={'center'}>
+                                <CIcon icon={icon.cibNextJs} width={70} height={45} />
+                            </div>
+                        )}
+                        {lang == 8 && (
+                            <div id="github" align={'center'}>
+                                <i class="fa-brands fa-github  fa-3x"></i>
+                            </div>
+                        )}
+                        </div>
+                    </Col>
+                </Row>
 
-                        <Col id="parametros" span={24} align={'center'} >
-                            <div>
-                                <p id="construcao">Precisa construir sua aplicação?</p>
-                            </div>
-                            <div>
-                                <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /><br /> <b>Somos especialistas em:</b></p>
-                            </div>
-                            </Col>
-                            <Col flex={'auto'} style={paddingCol} >
-                                {lang == 0 && (
-                                <div  id="html" align={'center'}>
-                                    <i id="icon-Html" class="fa-brands fa-html5 fa-3x"></i>
-                                </div>
-                                )}
-                                {lang == 1 && (
-                                    <div  id="css" align={'center'}>
-                                    <i id="icon-Css" class="fa-brands fa-css3-alt fa-3x"></i>
-                                    </div>
-                                )}
-                                {lang == 2 && (
-                                    <div id="bootstrap" align={'center'}>
-                                    <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-3x"></i>
-                                    </div>
-                                )}
-                                {lang == 3 && (
-                                    <div id="js" align={'center'}>
-                                    <i id="icon-Js" class="fa-brands fa-js fa-3x"></i>
-                                    </div>
-                                )}
-                                {lang == 4 && (
-                                    <div id="vue" align={'center'}>
-                                    <i id="icon-Vue" class="fa-brands fa-vuejs fa-3x"></i>
-                                    </div>
-                                )}
-                                {lang == 5 && (
-                                    <div id="angular" align={'center'}>
-                                    <i id="icon-Angular" class="fa-brands fa-angular fa-3x"></i>
-                                    </div>
-                                )}
-                                {lang == 6 && (
-                                    <div id="react" align={'center'}>
-                                    <i id="icon-React" class="fa-brands fa-react fa-3x"></i>
-                                    </div>
-                                )}
-                                {lang == 7 && (
-                                    <div id="nextjs" align={'center'}>
-                                    <CIcon icon={icon.cibNextJs} width={70} height={45} />
-                                    </div>
-                                )}
-                                {lang == 8 && (
-                                    <div id="github" align={'center'}>
-                                    <i id="icon-Github" class="fa-brands fa-github  fa-3x"></i>
-                                    </div>
-                                )}
-                            </Col>
-                    </Row>
-               
             </div>
         </>
 
