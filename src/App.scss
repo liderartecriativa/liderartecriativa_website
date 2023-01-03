@@ -221,18 +221,24 @@ $white: #FFFFFF;
 
 #parametros {
   padding: 25px 0px 25px 0px;
-  
+
 }
 
 #crescer {
   @include espacamento
 }
-
-#equip {
+@mixin divlinguage {
   max-width: 100%;
   max-height: auto;
   object-fit: contain;
   padding: 0px;
+  margin:0px;
+  
+  
 }
+#html {
+  background-color: $quinta-cor;
+  @include divlinguage();
 
 
+}
