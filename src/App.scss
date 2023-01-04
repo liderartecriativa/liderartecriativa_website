@@ -156,9 +156,11 @@ $white: #FFFFFF;
 
 #construcao {
   margin: 20px 0px 10px 0px;
-  font-size: 32px;
-  color: $white;
+  font-size: 20px;
+  color:$white;
   font-weight: bold;
+  text-transform: uppercase;
+  
 
 }
 
@@ -172,7 +174,6 @@ $white: #FFFFFF;
   display: table;
   width: 100%;
   height: 100%;
-  background:rgb(0, 0, 0);
   line-height: 1.6;
   position: relative;
   overflow: hidden;
@@ -236,7 +237,7 @@ $white: #FFFFFF;
 }
 
 #icon-Html {
-  color: #FF5722;
+  color: #ff531f;
 }
 
 #icon-Css {
@@ -301,40 +302,35 @@ $white: #FFFFFF;
 
 #css {
   @include divlinguage();
-  color: #2196F3;
+  color: $white;
 }
 
 #bootstrap {
   @include divlinguage();
-  color: #2196F3;
+  color: $white;
 }
 
 #js {
   @include divlinguage();
-  color: #2196F3;
+  color: $white;
 }
 
 #vue {
   @include divlinguage();
-  color: #2196F3;
+  color: $white;
 }
 
 #angular {
   @include divlinguage();
-  color: #2196F3;
+  color: $white;
 }
 
 #react {
   @include divlinguage();
-  color: #2196F3;
-}
-
-#nextjs {
-  @include divlinguage();
-  color: #2196F3;
+  color: $white;
 }
 
 #github {
   @include divlinguage();
-  color: #2196F3;
+  color: $white;
 }
