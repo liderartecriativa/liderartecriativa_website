@@ -156,7 +156,7 @@ $white: #FFFFFF;
 }
 
 #construcao {
-  margin: 20px 0px 10px 0px;
+  margin: 40px 0px 10px 0px;
   font-size: 20px;
   color:$white;
   font-weight: bold;
@@ -238,45 +238,6 @@ $white: #FFFFFF;
   }
 }
 
-#icon-Html {
-  color: #ff531f;
-}
-
-#icon-Css {
-  color: #2196F3;
-}
-
-#icon-Js {
-  color: #FFDF00;
-}
-
-#icon-Vue {
-  color: #4DBA87;
-}
-
-#icon-Angular {
-  color: #DD0031;
-
-}
-
-#icon-Bootstrap {
-  color: #5E3B7F;
-
-}
-
-#icon-React {
-  color: #61DAFB;
-
-}
-
-#icon-Nextjs {
-  width: 48px;
-  height: 48px;
-
-}
-
-
-
 #crescer {
   @include espacamento;
   color: $white;
@@ -296,37 +257,37 @@ $white: #FFFFFF;
 
 #html {
   @include divlinguage();
-  color: $white;
+ 
 }
 
 #css {
   @include divlinguage();
-  color: $white;
+ 
 }
 
 #bootstrap {
   @include divlinguage();
-  color: $white;
+ 
 }
 
 #js {
   @include divlinguage();
-  color: $white;
+  
 }
 
 #vue {
   @include divlinguage();
-  color: $white;
+  
 }
 
 #angular {
   @include divlinguage();
-  color: $white;
+ 
 }
 
 #react {
   @include divlinguage();
-  color: $white;
+  
 }
 
 #github {

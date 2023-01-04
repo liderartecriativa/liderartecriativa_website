@@ -20,14 +20,50 @@ export const Home = () => {
     }, []);
 
     const HtmlColor = {
-        background: '#474bff',
-        background: '-webkit-linear-gradient(0deg, #474bff 0%, #bc48ff 100%)',
-        background: 'linear-gradient(0deg, #474bff 0%, #bc48ff 100%)',
+        color:'#FFFFFF',
+        background:'#ff531f',
         padding: '40px 0px 0px 0px',
         margin: '0px',
     }
     const CssColor = {
-        background: '#ff531f',
+        color:'#FFFFFF',
+        background: '#2196F3',
+        padding: '40px 0px 0px 0px',
+        margin: '0px',
+    }
+    const BootsrapColor = {
+        color:'#FFFFFF',
+        background: '#5E3B7F',
+        padding: '40px 0px 0px 0px',
+        margin: '0px',
+    }
+    const JsColor = {
+        color:'#000000',
+        background: '#FFDF00',
+        padding: '40px 0px 0px 0px',
+        margin: '0px',
+    }
+    const VueColor = {
+        color:'#1c1e21',
+        background: '#4DBA87',
+        padding: '40px 0px 0px 0px',
+        margin: '0px',
+    }
+    const AngularColor = {
+        color:'#FFFFFF',
+        background: '#DD0031',
+        padding: '40px 0px 0px 0px',
+        margin: '0px',
+    }
+    const ReactColor = {
+        color:'#FFFFFF',
+        background: '#61DAFB',
+        padding: '40px 0px 0px 0px',
+        margin: '0px',
+    }
+    const GithubColor = {
+        color:'#FFFFFF',
+        background: '#161b22',
         padding: '40px 0px 0px 0px',
         margin: '0px',
     }
@@ -100,7 +136,7 @@ export const Home = () => {
                     )}
                     {lang == 2 && (
 
-                        <Col flex={'auto'} id="bootstrap" align={'center'}>
+                        <Col flex={'auto'} id="bootstrap" align={'center'} style={BootsrapColor}>
                             <i id="icon-Bootstrap" class="fa-brands fa-bootstrap fa-10x"></i>
                             <Col span={12}>
                                 <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
@@ -110,7 +146,7 @@ export const Home = () => {
                     )}
                     {lang == 3 && (
 
-                        <Col flex={'auto'} id="js" align={'center'}>
+                        <Col flex={'auto'} id="js" align={'center'} style={JsColor}>
                             <i id="icon-Js" class="fa-brands fa-js fa-10x"></i>
                             <Col span={12}>
                                 <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
@@ -120,7 +156,7 @@ export const Home = () => {
                     )}
                     {lang == 4 && (
 
-                        <Col flex={'auto'} id="vue" align={'center'}>
+                        <Col flex={'auto'} id="vue" align={'center'} style={VueColor}>
                             <i id="icon-Vue" class="fa-brands fa-vuejs fa-10x"></i>
                             <Col span={12}>
                                 <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
@@ -130,7 +166,7 @@ export const Home = () => {
                     )}
                     {lang == 5 && (
 
-                        <Col flex={'auto'} id="angular" align={'center'}>
+                        <Col flex={'auto'} id="angular" align={'center'} style={AngularColor}>
                             <i id="icon-Angular" class="fa-brands fa-angular fa-10x"></i>
                             <Col span={12}>
                                 <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
@@ -140,7 +176,7 @@ export const Home = () => {
                     )}
                     {lang == 6 && (
 
-                        <Col flex={'auto'} id="react" align={'center'}>
+                        <Col flex={'auto'} id="react" align={'center'} style={ReactColor}>
                             <i id="icon-React" class="fa-brands fa-react fa-10x"></i>
                             <Col span={12}>
                                 <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
@@ -150,7 +186,7 @@ export const Home = () => {
                     )}
                     {lang == 7 && (
 
-                        <Col flex={'auto'} id="github" align={'center'}>
+                        <Col flex={'auto'} id="github" align={'center'} style={GithubColor}>
                             <i class="fa-brands fa-github  fa-10x"></i>
                             <Col span={12}>
                                 <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
