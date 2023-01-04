@@ -181,11 +181,12 @@ $white: #FFFFFF;
   top: 0;
   left: 0;
   right: 0;
-
-
+  padding-bottom: 50px;
 
 }
-
+#lines-Color{
+  background: #000000;
+}
 .line {
   position: absolute;
   width: 1px;
