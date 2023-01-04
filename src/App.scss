@@ -168,21 +168,20 @@ $white: #FFFFFF;
   --fa-animation-duration: 15s
 }
 
-.lines{
+.lines {
   display: table;
   width: 100%;
   height: 100%;
-  background-color: #202022;
-  color: #000;
+  background:rgb(0, 0, 0);
   line-height: 1.6;
   position: relative;
   overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
- 
-  
- 
+
+
+
 }
 
 .line {
@@ -192,9 +191,9 @@ $white: #FFFFFF;
   top: 0;
   left: 50%;
   background: rgba(255, 255, 255, 0.1);
-  overflow:hidden;
+  overflow: hidden;
 
-    &::after{
+  &::after {
     content: '';
     display: block;
     position: absolute;
@@ -206,44 +205,62 @@ $white: #FFFFFF;
     animation: drop 7s 0s infinite;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-    }
-  &:nth-child(1){
-    margin-left: -25%}
-    &::after {
-      animation-delay: 2s}
-  
-  &:nth-child(3){
-    margin-left: 25%}
-    &::after{
-      animation-delay: 2.5s}
-  
- }
-@keyframes drop {
-  0%{top: -50%}
+  }
 
-  100% {top: 110%}
+  &:nth-child(1) {
+    margin-left: -25%
+  }
+
+  &::after {
+    animation-delay: 2s
+  }
+
+  &:nth-child(3) {
+    margin-left: 25%
+  }
+
+  &::after {
+    animation-delay: 2.5s
+  }
+
+}
+
+@keyframes drop {
+  0% {
+    top: -50%
+  }
+
+  100% {
+    top: 110%
+  }
 }
 
 #icon-Html {
   color: #FF5722;
 }
+
 #icon-Css {
   color: #2196F3;
 }
+
 #icon-Js {
   color: #FFDF00;
 }
+
 #icon-Vue {
   color: #4DBA87;
 }
+
 #icon-Angular {
   color: #DD0031;
 
 }
+
 #icon-Bootstrap {
   color: #5E3B7F;
 
 }
+
 #icon-React {
   color: #61DAFB;
 
@@ -252,7 +269,7 @@ $white: #FFFFFF;
 #icon-Nextjs {
   width: 48px;
   height: 48px;
-  
+
 }
 
 #parametros {
@@ -262,7 +279,7 @@ $white: #FFFFFF;
 
 #crescer {
   @include espacamento;
-  color:$white;
+  color: $white;
   font-size: 14px;
 
 }
@@ -279,37 +296,45 @@ $white: #FFFFFF;
 
 #html {
   @include divlinguage();
-  color:$white;
+  color: $white;
 }
-#css{
+
+#css {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }
-#bootstrap{
+
+#bootstrap {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }
-#js{
+
+#js {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }
-#vue{
+
+#vue {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }
-#angular{
+
+#angular {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }
-#react{
+
+#react {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }
-#nextjs{
+
+#nextjs {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }
-#github{
+
+#github {
   @include divlinguage();
-  color:#2196F3;
+  color: #2196F3;
 }

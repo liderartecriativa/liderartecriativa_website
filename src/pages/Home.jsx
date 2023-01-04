@@ -66,12 +66,14 @@ export const Home = () => {
                             <div className="line"></div>
                             <div></div>
                             <div className="line"></div>
+                            <Col span={12} align={'center'}>
                             <div>
                                 <p id="construcao">Precisa construir sua aplicação?</p>
                             </div>
                             <div>
                                 <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /><br /> <b>Somos especialistas em:</b></p>
                             </div>
+                            </Col>
                             {lang == 0 && (
                                 <Row>
                                     <Col flex={'auto'} id="html" align={'center'}>
