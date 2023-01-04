@@ -20,8 +20,15 @@ export const Home = () => {
     }, []);
 
     const HtmlColor = {
-        background: '#202022',
-        padding: '0px',
+        background: '#474bff',
+        background: '-webkit-linear-gradient(0deg, #474bff 0%, #bc48ff 100%)',
+        background: 'linear-gradient(0deg, #474bff 0%, #bc48ff 100%)',
+        padding: '40px 0px 0px 0px',
+        margin: '0px',
+    }
+    const CssColor = {
+        background: '#ff531f',
+        padding: '40px 0px 0px 0px',
         margin: '0px',
     }
 
@@ -83,7 +90,7 @@ export const Home = () => {
                     )}
                     {lang == 1 && (
 
-                        <Col flex={'auto'} id="css" align={'center'}>
+                        <Col flex={'auto'} id="css" align={'center'} style={CssColor}>
                             <i id="icon-Css" class="fa-brands fa-css3-alt fa-10x"></i>
                             <Col span={12}>
                                 <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
