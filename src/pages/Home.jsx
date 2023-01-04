@@ -8,8 +8,8 @@ import { Button, Space } from 'antd';
 export const Home = () => {
 
     const [lang, setLang] = React.useState(0);
-
-    React.useEffect(() => {
+    
+    /*React.useEffect(() => {
         const timer = setInterval(() => {
             setLang((prevLang) => (prevLang >= 7 ? 0 : prevLang + 1));
 
@@ -17,15 +17,16 @@ export const Home = () => {
         return () => {
             clearInterval(timer);
         };
-    }, []);
-
-    //ZERA O PADDING E MARGIN DAS COLUNAS NECESSARIAS
+    }, []);*/
     
-    const colorColHtml = {
-        padding: '0px', margin: '0px',
-        background:'#ff531f',
+    const HtmlColor = {
+        background:'#202022',
     }
-    
+
+    //ZERA O PADDING E MARGIN DAS COLUNAS NECESSARIAS E ALTERAR A COR
+
+   
+
     return (
         <>
 
@@ -57,7 +58,7 @@ export const Home = () => {
                         <h4 id="developer-Subtitle">Você está no lugar certo</h4>
                         <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
                     </Col>
-                    <Col id="parametros" span={24} align={'center'} style={colorColHtml} >
+                    <Col span={24} align={'center'}>
                         <div className="lines">
                             <div className="line"></div>
                             <div></div>
@@ -71,14 +72,14 @@ export const Home = () => {
                                 </div>
                             </Col>
                             {lang == 0 && (
-                                <Row>
-                                    <Col flex={'auto'} id="html" align={'center'}style={colorColHtml} >
+                               
+                                    <Col span={24} id="html" align={'center'}  style={HtmlColor}>
                                         <i id="icon-Html" class="fa-brands fa-html5 fa-10x"></i>
                                         <Col span={12}>
                                             <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
                                         </Col>
                                     </Col>
-                                </Row>
+                                
                             )}
                             {lang == 1 && (
                                 <Row>
@@ -140,7 +141,7 @@ export const Home = () => {
                                     </Col>
                                 </Row>
                             )}
-                            
+
                             {lang == 7 && (
                                 <Row>
                                     <Col flex={'auto'} id="github" align={'center'}>

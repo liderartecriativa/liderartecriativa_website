@@ -131,6 +131,7 @@ $white: #FFFFFF;
 
 #developer-Col {
   background-color: rgb(14, 6, 54);
+  
 }
 
 #developer-Title {
@@ -273,10 +274,7 @@ $white: #FFFFFF;
 
 }
 
-#parametros {
-  padding: 25px 0px 25px 0px;
 
-}
 
 #crescer {
   @include espacamento;
@@ -332,5 +330,5 @@ $white: #FFFFFF;
 
 #github {
   @include divlinguage();
-  color: $white;
+  
 }
