@@ -14,8 +14,31 @@ $js:#FFDF00;
 $vue:#4DBA87;
 $angular:#DD0031;
 $react:#61DAFB;
+$nodejs:#026e00;
 $git:#161b22;
+$php:#4F5B93;
+$goolang:#007d9c;
 
+.bg2 {
+  background-color: $html;
+  animation: bg-color 50s  infinite;
+  
+}
+@keyframes bg-color {
+ 
+  0% { background-color: $html;}
+  10% { background-color: $css; }
+  20% { background-color: $bootstrap; }
+  30% { background-color: $js; }
+  40% { background-color: $vue; }
+  50% { background-color: $angular; }
+  60% { background-color: $react; }
+  70% { background-color: $nodejs; }
+  80% { background-color: $git; }
+  90% { background-color: $php;}
+  100%{ background-color: $goolang}
+
+}
 
 #Content {
   background-color: rgb(146, 101, 140);
@@ -230,6 +253,9 @@ $git:#161b22;
 #react {
   @include divlinguage();
   
+}
+#nodejs{
+  @include divlinguage();
 }
 
 #github {

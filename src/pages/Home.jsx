@@ -4,71 +4,28 @@ import { Col, Row } from 'antd';
 import { Button, Space } from 'antd';
 
 
-
 export const Home = () => {
 
     const [lang, setLang] = React.useState(0);
 
     React.useEffect(() => {
         const timer = setInterval(() => {
-            setLang((prevLang) => (prevLang >= 7 ? 0 : prevLang + 1));
+            setLang((prevLang) => (prevLang >= 10 ? 0 : prevLang + 1));
 
-        }, 6000);
+        }, 4500);
         return () => {
             clearInterval(timer);
         };
     }, []);
 
     //CONTROLE DE CORES 
-    const HtmlColor = {
-
-        color: '#ff531f',
+    const Color = {
+        color: 'white',
         padding: '5px',
         margin: '0px',
 
     }
-    const CssColor = {
 
-        color: '#2196F3',
-        padding: '5px',
-        margin: '0px',
-    }
-    const BootsrapColor = {
-
-        color: '#5E3B7F',
-        padding: '5px',
-        margin: '0px',
-    }
-    const JsColor = {
-
-        color: '#FFDF00',
-        padding: '5px',
-        margin: '0px',
-    }
-    const VueColor = {
-
-        color: '#4DBA87',
-        padding: '5px',
-        margin: '0px',
-    }
-    const AngularColor = {
-
-        color: '#DD0031',
-        padding: '5px',
-        margin: '0px',
-    }
-    const ReactColor = {
-
-        color: '#61DAFB',
-        padding: '5px',
-        margin: '0px',
-    }
-    const GithubColor = {
-       
-        color: '#161b22',
-        padding: '5px',
-        margin: '0px',
-    }
 
     return (
         <>
@@ -101,7 +58,7 @@ export const Home = () => {
                         <h4 id="developer-Subtitle">Você está no lugar certo</h4>
                         <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
                     </Col>
-                    <Col span={24} align={'center'} className="bg">
+                    <Col span={24} align={'center'} className="bg2">
                         <div>
                             <p id="construcao">Precisa construir sua aplicação?</p>
                         </div>
@@ -109,46 +66,61 @@ export const Home = () => {
                             <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /></p>
                         </div>
                         {lang == 0 && (
-                            <Col span={24} id="html" align={'center'} style={HtmlColor}>
+                            <Col span={24} id="html" align={'center'} style={Color}>
                                 <i className="fa-brands fa-html5 fa-6x"></i>
                             </Col>
                         )}
                         {lang == 1 && (
-                            <Col span={24} id="css" align={'center'} style={CssColor}>
+                            <Col span={24} id="css" align={'center'} style={Color}>
                                 <i className="fa-brands fa-css3-alt fa-6x"></i>
                             </Col>
                         )}
                         {lang == 2 && (
-                            <Col span={24} id="bootstrap" align={'center'} style={BootsrapColor}>
+                            <Col span={24} id="bootstrap" align={'center'} style={Color}>
                                 <i className="fa-brands fa-bootstrap fa-6x"></i>
                             </Col>
                         )}
                         {lang == 3 && (
 
-                            <Col span={24} id="js" align={'center'} style={JsColor}>
+                            <Col span={24} id="js" align={'center'} style={Color}>
                                 <i className="fa-brands fa-js fa-6x"></i>
                             </Col>
                         )}
                         {lang == 4 && (
 
-                            <Col span={24} id="vue" align={'center'} style={VueColor}>
+                            <Col span={24} id="vue" align={'center'} style={Color}>
                                 <i className="fa-brands fa-vuejs fa-6x"></i>
 
                             </Col>
                         )}
                         {lang == 5 && (
-                            <Col span={24} id="angular" align={'center'} style={AngularColor}>
+                            <Col span={24} id="angular" align={'center'} style={Color}>
                                 <i className="fa-brands fa-angular fa-6x"></i>
                             </Col>
                         )}
                         {lang == 6 && (
-                            <Col span={24} id="react" align={'center'} style={ReactColor}>
+                            <Col span={24} id="react" align={'center'} style={Color}>
                                 <i className="fa-brands fa-react fa-6x"></i>
                             </Col>
                         )}
                         {lang == 7 && (
-                            <Col span={24} id="github" align={'center'} style={GithubColor}>
+                            <Col span={24} id="nodejs" align={'center'} style={Color}>
+                                <i class="fa-brands fa-node fa-6x"></i>
+                            </Col>
+                        )}
+                        {lang == 8 && (
+                            <Col span={24} id="github" align={'center'} style={Color}>
                                 <i className="fa-brands fa-github  fa-6x"></i>
+                            </Col>
+                        )}
+                        {lang == 9 && (
+                            <Col span={24} id="php" align={'center'} style={Color}>
+                                <i class="fa-brands fa-php fa-6x"></i>
+                            </Col>
+                        )}
+                        {lang == 10 && (
+                            <Col span={24} id="goolang" align={'center'} style={Color}>
+                                <i class="fa-brands fa-golang fa-6x"></i>
                             </Col>
                         )}
                     </Col>
