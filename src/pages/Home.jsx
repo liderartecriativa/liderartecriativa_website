@@ -13,7 +13,7 @@ export const Home = () => {
         const timer = setInterval(() => {
             setLang((prevLang) => (prevLang >= 7 ? 0 : prevLang + 1));
 
-        },6000);
+        }, 6000);
         return () => {
             clearInterval(timer);
         };
@@ -21,52 +21,52 @@ export const Home = () => {
 
     //CONTROLE DE CORES 
     const HtmlColor = {
-        color:'#FFFFFF',
-        background:'#ff531f',
-        padding: '20px 0px 0px 0px',
+        color: '#FFFFFF',
+        background: '#ff531f',
+        padding: '5px',
         margin: '0px',
-    
+
     }
     const CssColor = {
-        color:'#FFFFFF',
+        color: '#FFFFFF',
         background: '#2196F3',
-        padding: '20px 0px 0px 0px',
+        padding: '5px',
         margin: '0px',
     }
     const BootsrapColor = {
-        color:'#FFFFFF',
+        color: '#FFFFFF',
         background: '#5E3B7F',
-        padding: '20px 0px 0px 0px',
+        padding: '5px',
         margin: '0px',
     }
     const JsColor = {
-        color:'#000000',
+        color: '#000000',
         background: '#FFDF00',
-        padding: '20px 0px 0px 0px',
+        padding: '5px',
         margin: '0px',
     }
     const VueColor = {
-        color:'#1c1e21',
+        color: '#1c1e21',
         background: '#4DBA87',
-        padding: '20px 0px 0px 0px',
+        padding: '5px',
         margin: '0px',
     }
     const AngularColor = {
-        color:'#FFFFFF',
+        color: '#FFFFFF',
         background: '#DD0031',
-        padding: '20px 0px 0px 0px',
+        padding: '5px',
         margin: '0px',
     }
     const ReactColor = {
-        color:'#FFFFFF',
+        color: '#FFFFFF',
         background: '#61DAFB',
-        padding: '20px 0px 0px 0px',
+        padding: '5px',
         margin: '0px',
     }
     const GithubColor = {
-        color:'#FFFFFF',
+        color: '#FFFFFF',
         background: '#161b22',
-        padding: '20px 0px 0px 0px',
+        padding: '5px',
         margin: '0px',
     }
 
@@ -101,90 +101,60 @@ export const Home = () => {
                         <h4 id="developer-Subtitle">Você está no lugar certo</h4>
                         <p id="developer-Description">A LiderArt Criativa ajuda empreendedores a construir e lançar novos produtos e,<br /> ajuda as empresas em crescimento conectando equipes de desenvolvimento pronta <br /> para uso e começar a construir.</p>
                     </Col>
-                    <Col span={24} align={'center'} id="lines-Color">
-                        <div className="lines">
-                            <div className="line"></div>
-                            <div></div>
-                            <div className="line"></div>
-                            <div>
-                                <p id="construcao">Precisa construir sua aplicação?</p>
-                            </div>
-                            <div>
-                                <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /></p>
-                            </div>
+                    <Col span={24} align={'center'} className="bg">
+                        <div>
+                            <p id="construcao">Precisa construir sua aplicação?</p>
                         </div>
+                        <div>
+                            <p id="crescer">Vamos usar as melhores ferramentas para que você possa<br />continuar crescendo imediatamente.<br /></p>
+                        </div>
+
                     </Col>
                     {lang == 0 && (
                         <Col span={24} id="html" align={'center'} style={HtmlColor}>
                             <i className="fa-brands fa-html5 fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
                         </Col>
                     )}
                     {lang == 1 && (
-
-                        <Col flex={'auto'} id="css" align={'center'} style={CssColor}>
+                        <Col span={24} id="css" align={'center'} style={CssColor}>
                             <i className="fa-brands fa-css3-alt fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
                         </Col>
                     )}
                     {lang == 2 && (
-
-                        <Col flex={'auto'} id="bootstrap" align={'center'} style={BootsrapColor}>
+                        <Col span={24} id="bootstrap" align={'center'} style={BootsrapColor}>
                             <i className="fa-brands fa-bootstrap fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
                         </Col>
                     )}
                     {lang == 3 && (
 
-                        <Col flex={'auto'} id="js" align={'center'} style={JsColor}>
+                        <Col span={24} id="js" align={'center'} style={JsColor}>
                             <i className="fa-brands fa-js fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
                         </Col>
                     )}
                     {lang == 4 && (
 
-                        <Col flex={'auto'} id="vue" align={'center'} style={VueColor}>
+                        <Col span={24} id="vue" align={'center'} style={VueColor}>
                             <i className="fa-brands fa-vuejs fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
+
                         </Col>
                     )}
                     {lang == 5 && (
-
-                        <Col flex={'auto'} id="angular" align={'center'} style={AngularColor}>
-                            <i  className="fa-brands fa-angular fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
+                        <Col span={24} id="angular" align={'center'} style={AngularColor}>
+                            <i className="fa-brands fa-angular fa-6x"></i>
                         </Col>
                     )}
                     {lang == 6 && (
-
-                        <Col flex={'auto'} id="react" align={'center'} style={ReactColor}>
-                            <i  className="fa-brands fa-react fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
+                        <Col span={24} id="react" align={'center'} style={ReactColor}>
+                            <i className="fa-brands fa-react fa-6x"></i>
                         </Col>
                     )}
                     {lang == 7 && (
-
-                        <Col flex={'auto'} id="github" align={'center'} style={GithubColor}>
+                        <Col span={24} id="github" align={'center'} style={GithubColor}>
                             <i className="fa-brands fa-github  fa-6x"></i>
-                            <Col span={12}>
-                                <h5>HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.</h5>
-                            </Col>
                         </Col>
                     )}
+                    <Col span={24} align={'center'}>
+                     <p>EU SOU O TEXTO DE TESTE</p></Col>
                 </Row>
             </div>
         </>
